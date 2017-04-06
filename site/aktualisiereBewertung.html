@@ -1,0 +1,41 @@
+<div class="jumbotron headJumbotron customJumbotron" id="bHeader">
+    <div class="container" id="entryContent" ng-show="isContentVisible">
+        <div class="row">
+            <div class="col-md-5">
+                <label for="name">Unternehmen:</label>
+                <input type="text" ng-model="entry.firma" class="form-control" placeholder="Bitte geben Sie den Unternehmensnamen ein" required>
+            </div>
+            <div class="col-md-5">
+                <label for="email">Kontaktperson:</label>
+                <input type="text" ng-model="entry.kontakt" class="form-control" placeholder="Bitte geben Sie die Kontaktperson ein" required>
+            </div>
+            <div class="col-md-2">
+                <label for="email">Ihre Bewertung:</label><br />
+                <span uib-rating ng-model="entry.rating" max="max" read-only="false" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
+            </div>
+        </div>
+
+        <fieldset>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="msg">Bemerkungen</label>
+                    <textarea name="msg" ng-model="entry.message" class="form-control"></textarea>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button ng-click="saveRating()" class="btn btn-success center-block" style="font-size:18pt;"><span class="fa fa-check-circle"></span> Abspeichern</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <br/>
+    <div class="container" id="ratingResult"></div>
+    <div class="container" id="errorContent" ng-hide="isContentVisible">
+        <div class="alert alert-danger" role="alert">
+            Unter diesem link konnte <strong>keine Bewertung</strong> gefunden werden.
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <title>HTR-Ingenieure und Architekten</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <link rel="icon" type="image/png" href="/resources/img/favicon.ico" sizes="16x16" />
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.min.js"></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-touch.min.js"></script>
+
+
+
+		<script src="/js/ui-bootstrap-custom-tpls-2.5.0-customRating.js"></script>
+
+
+		<script>document.write('<base href="' + document.location + '" />');</script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+     
+		<link rel="stylesheet" href="/resources/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="/css/customstyles.css">
+    </head>
+    <body ng-app="htrApp">     
+        <div class="page-row page-row-expanded">
+            <htr:menu></htr:menu>
+            <div ng-view></div>
+        </div>
+        <div class="page-row" ng-include="'partials/footer.html'"></div>
+		<script src="/js/module.js"></script>
+        <script src="/js/service.js"></script>
+		<script src="/js/controller.js"></script>
+		<script src="/js/directive.js"></script>
+		<script src="/js/routeProvider.js"></script>		
+		<script src="/js/customScript.js"></script> 	
+	</body>
+ </html>

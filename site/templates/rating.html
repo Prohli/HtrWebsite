@@ -1,0 +1,33 @@
+<div class="ratingContent">
+    <div class="row well">
+        <div class="col-md-10">
+            <h1 class="display-5" id="firma">{{entry.firma}}</h1>  
+        </div>
+        <div class="col-md-2 text-right">
+            <span uib-rating ng-model="entry.rating" max="max" read-only="true" on-hover="hoveringOver(value)" on-leave="overStar = null" aria-labelledby="default-rating"></span>           
+        </div>
+    </div>
+    <div class="row well">
+        <div class="col-md-2">
+         
+        </div>
+    </div>
+    <div class="row well">
+        <div class="col-md-2">
+            <b id="kontakt">{{entry.kontakt}}</b> 
+        </div>
+        <div class="col-md-9">
+            <i id="msg">{{entry.message}}</i>
+        </div>
+    </div>  
+    <div class="row well">
+        <div class="col-md-2">
+            <span id="createDate" class="badge badge-primary">{{entry.date | date:'dd.MM.yyyy'}}</span>
+        </div>
+        <div class="col-md-2 offset-md-8 text-right" ng-controller="deleteRatingCtrl">
+            <button ng-click="deleteRating(entry)" class="btn btn-danger btn-sm center-block">
+                <span class="fa fa-trash"></span>
+            </button>             
+        </div>
+    </div>
+</div>

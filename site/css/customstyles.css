@@ -1,0 +1,208 @@
+import ("https://fonts.googleapis.com/css?family=Roboto"); 
+* {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: floralwhite;
+}
+
+
+/*Footer sticky bottom!*/
+html,
+body { height: 100%; }
+body {
+display: table;
+margin:0;
+padding:0;
+width: 100%;
+background-color:#292B2C;
+}
+.page-row {
+display: table-row;
+}
+.page-row-expanded { height: 100%; }
+
+
+/*Klassen*/
+.locationLink {
+    vertical-align:top;
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 100pt;
+}
+
+    .locationLink:hover {
+        color: firebrick;
+    }
+
+
+.bigFAcons {
+    font-size: 90pt;
+}
+.adressLink {
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 90pt;
+}
+
+    .adressLink:hover {
+        color: forestgreen;
+    }
+
+
+
+
+.customDropDown {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.headJumbotron {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 100px !important;
+    color: white;
+    margin-top: -55px;
+    background-attachment: fixed !important;
+}
+
+.customDropDownMenuItem {
+    padding-left: 20px !important;
+}
+
+.divDark {
+    padding-left: 15px;
+    color: #292B2C;
+    width: 100%;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    border-left-width: 1px;
+    display: inline-block;
+    line-height: 2em;
+}
+
+
+
+.customTextH4 {
+    min-height: 55px;
+}
+
+.customJumbotron {
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+
+.navbar {
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff !important;
+}
+
+.darkJumbotron {
+    background-color: #292B2C !important;
+    color: white !important;
+}
+
+.customTextDiv {
+    background-color: black;
+    background: rgba(41, 43, 44, 0.6);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+    .nav-link:hover {
+        border-radius: 3px;
+        background-color: #228B22;
+        transition: background-color 500ms linear;
+    }
+
+.scrolled {
+    background-color: rgba(41,43,44,0.9);
+    transition: background-color 500ms linear;
+}
+
+
+.customStar {
+    color: #FFD700;
+    font-size: 20px;
+}
+
+.ratingContent {
+    background: rgba(0, 0, 0, 0.7);  
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.glassyListItem{
+background: rgba(0,0,0,0.7) !important;
+}
+
+
+/*Ids*/
+#homeHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../resources/img/mainImage.jpg) repeat 0 0;
+}
+
+#lsHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../resources/img/leistungsImage.jpg) repeat 0 0;
+}
+
+#prHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../resources/img/projekt.jpg) repeat 0 0;
+}
+
+#atHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../resources/img/architektur.jpg) repeat 0 0;
+}
+
+#kHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../resources/img/kontakt.jpg) repeat 0 0;
+}
+
+#gHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../resources/img/gebaeudetechnik.jpg) repeat 0 0;
+}
+
+#htrHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../resources/img/house.jpg) repeat 0 0;
+}
+
+#bHeader {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../resources/img/checklist.jpg) repeat 0 0;
+}
+
+@media (max-width: 769px) {
+
+
+    h1.display-2 {
+        font-size: 42pt !important;
+    }
+
+    h1.display-4 {
+        font-size: 32pt !important;
+    }
+}
+
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+    transition: all linear 1s;
+}
+
+    .animate-repeat.ng-leave.ng-leave-active,
+    .animate-repeat.ng-move,
+    .animate-repeat.ng-enter {
+        opacity: 0;
+        max-height: 0;
+    }
+
+        .animate-repeat.ng-leave,
+        .animate-repeat.ng-move.ng-move-active,
+        .animate-repeat.ng-enter.ng-enter-active {
+            opacity: 1;
+            max-height: 160px;
+        }
+
+

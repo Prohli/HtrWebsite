@@ -1,0 +1,14 @@
+{
+  "name": "htrWebseite",
+  "version": "0.5.0",
+  "description": "WebDev project",
+  "main": "server.js",
+  "author": "Max",
+  "license": "ISC",
+
+  "dependencies": {
+	"express": "^4.15.2",
+	"body-parser": "^1.17.1",
+	"jsonfile": "^2.4.0"
+  }
+}
